@@ -13,11 +13,11 @@ const imagemin = require('gulp-imagemin');
 const stylesDestDirectory = 'static/css';
 
 gulp.task('watch', () => {
-  gulp.watch('themes/wood_theme/src/sass/**/*.scss', ['styles']);
+  gulp.watch('themes/zb/src/sass/**/*.scss', ['styles']);
 });
 
 gulp.task('styles', ['clean:styles'], () =>
-  gulp.src('themes/wood_theme/src/sass/**/*.scss')
+  gulp.src('themes/zb/src/sass/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
       importer: nodeSassMagicImporter(),

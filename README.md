@@ -1,4 +1,4 @@
-This is the source for a site I'm building to showcase the green woodworking I do.
+This is the source code for a new home for zachbeauvais.com. It's a long way from going live.
 
 It uses [Hugo][] as a static site generator.
 

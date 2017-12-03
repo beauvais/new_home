@@ -1,7 +1,7 @@
 {
-  "name": "woodfromtrees",
+  "name": "new home",
   "version": "1.0.0",
-  "description": "site code for woodfromtrees.com",
+  "description": "site code for zachbeauvais.com",
   "main": "gulpfile.js",
   "dependencies": {
     "bulma": "^0.5.3"
@@ -21,7 +21,7 @@
     "uncss": "^0.15.0"
   },
   "scripts": {
-    "start": "concurrently 'gulp' 'hugo server --theme=wood_theme --buildDrafts --bind '0.0.0.0' --baseURL 192.168.0.3' 'open http://localhost:1313'",
+    "start": "concurrently 'gulp' 'hugo server --theme=zb --buildDrafts --bind '0.0.0.0' ' 'open http://localhost:1313'",
     "build": "hugo && gulp build"
   },
   "repository": {
