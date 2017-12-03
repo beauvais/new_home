@@ -1,0 +1,86 @@
+---
+author: admin
+date: 2008-06-04 15:13:57+00:00
+draft: false
+title: Zemanta
+type: post
+url: /archives/zemanta/
+categories:
+- Digital
+- review
+tags:
+- blogging
+- curser
+- firefox
+- flickr
+- interface feature
+- Internet Genius
+- on-the-fly
+- online application
+- plugin
+- rdf
+- RDF store
+- scribefire
+- semantic
+- semantic features
+- suggestion
+- widget
+- wysiwyg editor
+- Zemanta
+---
+
+[![Exterior view. Bronze tympanum, by Olin L. Warner, representing Writing above main entrance doors. Library of Congress Thomas Jefferson Building, Washington, D.C. Cropped from the Library of Congress digital version using the GIMP.](http://zachbeauvais.com/wp-content/uploads/2008/06/202px-Olin-Warner-LoC-tympanum-Highsmith.jpeg)
+](http://zachbeauvais.com/wp-content/uploads/2008/06/Image:Olin-Warner-LoC-tympanum-Highsmith.jpeg)
+
+
+Image via [Wikipedia](http://zachbeauvais.com/wp-content/uploads/2008/06/Image:Olin-Warner-LoC-tympanum-Highsmith.jpeg)
+
+
+
+
+
+
+
+I'm trying out a [Zemanta](http://zachbeauvais.com/wp-content/uploads/2008/06/www.zemanta.com) [blog post](http://zachbeauvais.com/wp-content/uploads/2008/06/Blog). What it does, apparently, is to suggest ideas for the article you're currently writing. It's a [semantic](http://zachbeauvais.com/wp-content/uploads/2008/06/Semantics) blog [suggestion](http://zachbeauvais.com/wp-content/uploads/2008/06/Suggestion) feature, and it's manifested in this instance as a [firefox plugin](http://zachbeauvais.com/wp-content/uploads/2008/06/List_of_Firefox_extensions) that adds a write widget to my [WordPress](http://zachbeauvais.com/wp-content/uploads/2008/06/wordpress.org) [WYSIWYG editor](http://zachbeauvais.com/wp-content/uploads/2008/06/WYSIWYG). IIt updates every 300 characters, and also has 'semantic features'. There's an interview [over at R/WW](http://zachbeauvais.com/wp-content/uploads/2008/06/andraz_tori_zemanta_interview.php), for more information. I'm kind of trying to see what it recommends so need to fill in the 300 characters:
+
+
+
+
+
+
+Related articles
+
+
+
+
+
+
+      * [It's not just about Zemanta (but z-ta is cool)](http://zachbeauvais.com/wp-content/uploads/2008/06/its-not-just-about-zemanta-but-z-ta-is-cool) [via Zemanta]
+      * [Rich blog content at the click of a button - Zemanta has gone live!](http://zachbeauvais.com/wp-content/uploads/2008/06/?p=80) [via Zemanta]
+      * [How The Internet Genius...](http://zachbeauvais.com/wp-content/uploads/2008/06/how-the-internet-genius) [via Zemanta]
+
+
+
+
+
+Well it looks like it suggests related articles, and adds a bunch of Zemanta boxes into the blog space. It also finds images from [Flickr](http://www.flickr.com/).
+
+I could see this tool being very handy in future, though I usually blog from a client, and I don't think this supports ScribeFire or ecto (which is rubbish, by the way.) However, there are a few problems with it:
+
+
+
+
+  1. It generates an unhelpful set of areas in the blog itself. So if you include a Zemanta suggestion, it pastes it where you're typing, and you end up typing in an alt area in the code... annoying.
+  2. It updates every 300 characters. This is annoying because it's not necessarily that real-time. This is an awkward interface feature. It also places your curser at the top of the post every time it updates, meaning what I just [typed](http://zachbeauvais.com/wp-content/uploads/2008/06/Type_system) appeared above the opening line...
+
+
+I think this kind of application, however, is prescient of the direction the Read/Write web is heading. It's active and dynamic, and I'm sure the interface will be ironed out over time. I'm not sure what 'semantic' features they're necessarily incorporating (is this just keyword-searched or is it tyingin with some [RDF](http://zachbeauvais.com/wp-content/uploads/2008/06/Resource_Description_Framework) store somewhere?) but I like the way it's heading.
+
+I like the fact that it suggests images (all images in this post provided by Zemanta), but I'm not sure about the inclusion of 'Zemanta' presence everywhere... I'm also slightly concerned that some of the images it supplies are 'license unknown', meaning  you could use one and infringe on copyright. It does, however, have a link saying you can check it yourself, which shows they're thinking ahead! It's implementation of images is a bit of a struggle, however, in that you end up typing in the description area without the ability to click out of it. This is balanced by the fact that it automatically adds citations. It only adds a single image, though... so you can't add a second image to the same blog post.
+
+Now, they just need to make it a bit smoother, and stop jumping to the top of the bloody post ;)
+
+
+
+[![Zemanta Pixie](http://zachbeauvais.com/wp-content/uploads/2008/06/zemified_c.png?x-id=1edf7dd2-89e2-41b9-8f09-ddcb63b060e4)
+](http://zachbeauvais.com/wp-content/uploads/2008/06/www.zemanta1.com)

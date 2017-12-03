@@ -1,0 +1,28 @@
+---
+author: admin
+date: 2008-04-04 10:57:16+00:00
+draft: false
+title: Photos
+type: post
+url: /archives/photos/
+categories:
+- Digital
+tags:
+- computing
+- Digital
+- JavaScript programming language
+- Lightbox
+- Microsoft Windows
+- Web 2.0
+- Web design
+- Web development
+- Windows Live
+- Windows Live Writer
+- World Wide Web
+---
+
+I've added a lightbox photo gallery to the site, if you ever want to have a look at random images they're there. There's also a link in the navigation bar. I'm liking this new blog, it's easier to use and integrates better with Windows Live Writer... except the visual styles... typical.
+
+
+
+Technorati Tags: zach,beauvais,photos,lightbox,gallery

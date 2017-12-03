@@ -31,6 +31,11 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+// Images
+
+.is-width {
+    max-width: 75%;
+}
 
 // Layouts
 
@@ -46,7 +51,7 @@ $navbar-item-img-max-height: 3.583rem;
 
 .has-hero-image {
     @extend .hero;
-    background-image: url("/images/spoon-hero.jpg");
+    background-image: url("/images/golden_trees.jpg");
     background-position:center;
     background-repeat: no-repeat;
     background-attachment: fixed;
