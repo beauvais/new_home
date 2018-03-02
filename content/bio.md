@@ -1,11 +1,11 @@
----
-author: Zach Beauvais
-date: 2010-06-15 00:16:02+00:00
-draft: false
-title: bio
-type: single
-<!-- url: /bio/ -->
----
++++
+author = "Zach Beauvais"
+date = "2010-06-15 00:16:02+00:00"
+draft = "false"
+title = "bio"
+type = "single"
+layout = "single"
++++
 
 [![Desert Grass](/images/bio/desert_grass.jpg)
 ](/images/bio/desert_grass.jpg)Biographies tend toward the third person: "_So and so_ was born to be famous..." I am not famous.
