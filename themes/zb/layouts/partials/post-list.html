@@ -1,6 +1,5 @@
-      <div>
-        <!-- Note that .Data.Pages is the equivalent of .Site.Pages on the homepage template. -->
-        {{ range first 10 .Data.Pages }}
-            {{ .Render "summary"}}
-        {{ end }}
-      </div>
+<ul>
+    {{ range first 5 (where .Data.Pages "Type" "post") }}
+   <li> <a href="{{.URL}}" title="{{.Title}}">{{ .Title }}</a></li>
+    {{ end }}
+</ul>
