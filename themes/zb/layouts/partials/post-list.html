@@ -1,17 +1,25 @@
 <section id="posts" class="section  is-small">
+    
     <div class="columns is-centered is-vcentered">
         <div class="column is-vcentered is-centered is-12">
+            <div class="content">
+            <h2 class="title">Latest posts</h2>
             <div class="tile is-ancestor">
                 {{ range first 4 (where .Data.Pages "Type" "post") }}
-                <div class="tile box is-child is-3">
+                <div class="tile box is-shadowless is-child is-3">
                     <a href="{{.URL}}" title="{{.Title}}">
                         <div>
                             <h3 class="title">
                             {{ .Title }}
                             </h3>
+                            <p class="is-pulled-right is-small">
+                                Posted: {{ .PublishDate.Format "2 January, 2006" }}
+                            </p>
                             <p>
-                                {{slicestr .Summary 0 140 | markdownify}}
-                                <!-- {{ .Summary }} -->
+                                {{slicestr .Summary 0 140 | markdownify}}&#8230;
+                                <br>
+                                Read more.
+                                
                             </p>
                         </div>
                     </a>
@@ -19,5 +27,6 @@
                 {{ end }}
             </div>
         </div>
+    </div>
     </div>
 </section>
