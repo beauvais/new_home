@@ -1,11 +1,6 @@
-{{ define "main"}}
-{{ partial "hero-image" . }}
-{{ partial "about" . }}
-{{ partial "post-list" . }}
       <div>
         <!-- Note that .Data.Pages is the equivalent of .Site.Pages on the homepage template. -->
         {{ range first 10 .Data.Pages }}
             {{ .Render "summary"}}
         {{ end }}
       </div>
-{{ end }}

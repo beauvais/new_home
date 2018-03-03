@@ -14,6 +14,9 @@ I am Zach Beauvais – a writer and content strategist who likes to help people 
 
 My job titles have worked their way through guest author to evangelist and community manager, and—most fun so far—editor. From podcasting and writing, to creating community engagement plans for an incubated startup, I’ve tended to work around content and people, but try to keep my eye on big ideas.
 
-I tweet, flick, and do other webby verbs now and then.
+I [tweet][], [flick][], and do other webby verbs now and then.
 
 I also make and sell hand-carved items (like spoons) from green wood in the Etsy shop Wood from Trees.
+
+[tweet]: https://twitter.com/beauvais
+[flick]: https://flickr.com/beauvais
