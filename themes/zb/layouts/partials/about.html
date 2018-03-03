@@ -3,18 +3,18 @@
         <div class="columns is-centered is-vcentered">
             <div class="column is-8">
                 <div class="content">
-                    <h2 class="title">I'm Zach Beauvais.</h2>
-                    <h3 class="subtitle">I make useful things from trees.</h3>
+
+                    <h2 class="title"> {{ with .Site.GetPage "section" "about" }}{{ .Title }}{{ end }}</h2>
+                    <h3 class="subtitle">{{ with .Site.GetPage "section" "about" }}{{ .Params.subtitle }}{{ end }}</h3>
+                    <div>
+                    {{ with .Site.GetPage "section" "about" }}{{ .Content}}{{ end }}
+                    </div>
                     
-                    <p>I start every one of my projects with a tree. If I'm lucky, I get to fell it, but sometimes, I collect up a fresh log. I split green logs with a froe, axe, and wedges. The resulting planks (called billets) then face a carving axe for rough shaping.</p>
-                    <p>Once the shape is roughed out, I move on to refining with straight blades and hook knives (which let me hollow out bowls).</p>
-                    <p>I don't use sandpaper or other abrasives, so everything is tool-finished. This leaves a durable, smooth surface that weathers better than abraded wood which can tear or fluff up when soaked.</p>
-                    <p>I design and make things to be used, even if they might be good to look at.</p>
                 </div>
             </div>
             <div class="column is-3">
                 
-                <img id="zb" src="images/about/zb.jpg">
+                <img id="zb" src="{{ with .Site.GetPage "section" "about" }}{{ .Params.image }}{{ end }}">
                 
             </div>
         </div>

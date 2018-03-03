@@ -6,7 +6,7 @@ license = "MIT"
 licenselink = "https://github.com/beauvais/new_home/blob/master/LICENSE.md"
 description = "A theme for a blog  using the Bulma CSS framework"
 homepage = "https://github.com/beauvais/new_home"
-tags = [blog, personal,, Bulma, SASS]
+tags = [blog, personal, Bulma, SASS]
 features = [Bulma, scss, SASS]
 min_version = "0.25.1"
 

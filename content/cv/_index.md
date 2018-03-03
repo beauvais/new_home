@@ -4,7 +4,6 @@ date: 2017-06-15 00:16:02+00:00
 draft: false
 title: cv
 type: single
-<!-- url: /bio/ -->
 ---
 
 <h2>Curriculum Vitae</h2>
