@@ -1,43 +1,18 @@
-<section id="woodwork" class="section is-medium">
+<section id="greenwood" class="section is-primary is-small">
+    <div class="container">
         <div class="columns is-centered is-vcentered">
-            <div class="column is-vcentered is-centered is-8">
-                <div class="content has-text-centered">
-                    <h2 class="title">Green woodcraft by Zach Beauvais.</h2>
-                    <p>Hand-carved spoons and pole-lathe turned bowls with wooden cups that start from a fresh log.</p>
+            <div class="column is-3">
+                <img id="zb" src="{{ with .Site.GetPage "section" "greenwood" }}{{ .Params.image }}{{ end }}">            
+            </div>
+            <div class="column is-7">
+                <div class="content">
+                    <h2 class="title"> {{ with .Site.GetPage "section" "greenwood" }}{{ .Title }}{{ end }}</h2>
+                    <h3 class="subtitle">{{ with .Site.GetPage "section" "greenwood" }}{{ .Params.subtitle }}{{ end }}</h3>
+                    <div>
+                        {{ with .Site.GetPage "section" "greenwood" }}{{ .Content}}{{ end }}
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="tile is-ancestor">
-            <div class="tile box is-child is-4">
-                <a href="/wooden-ware/spoons" title="spoons">
-                    <div>
-                        <img class="image" src="images/home/spoon.jpg" alt="photo of a spoon with axe">
-                        <h2 class="title">Spoons</h2>
-                        <p>Woden spoons stir your pots, serve your food, and feed mouths.</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="tile box is-child is-4">
-                <a href="/wooden-ware/bowls" title="bowls">
-                    <div>
-                        <img class="image" src="images/home/bowls.jpg" alt="photo of a spoon with axe">
-                        <h2 class="title">Bowls</h2>
-                        <p>Wooden bowls spin to life on a lathe, and hold your porridge.</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="tile box is-child is-4">
-                <a href="/wooden-ware/cups" title="cups">
-                    <div>
-                        <img class="image" src="images/home/cup.jpg" alt="photo of a spoon with axe">
-                        <h2 class="title">Cups</h2>
-                        <p>Cups like kuksas are the love-children of wooden bowls and spoons.</p>
-                    </div>
-                </a>
-            </div>
-            
-        </div>
-    
+    </div>
 </section>
