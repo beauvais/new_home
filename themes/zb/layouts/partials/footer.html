@@ -2,8 +2,10 @@
     {{ template "_internal/google_analytics.html" . }}
     <div class="container">
         <div class="content has-text-centered">
-            <p class="title">
-                <strong><a href="/" title="footer home">{{.Site.Title}}</a></strong>
+            <p>
+                <strong>
+                    ©{{ dateFormat "2006" now }} <a href="/" title="footer home">{{.Site.Params.owner}}</a>, some rights reserved.
+                </strong>
             </p>
             
         </div>

@@ -12,3 +12,4 @@ relativeURLs = true
 # disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
 [Params]
     herotitle = "blogging perspective"
+    owner = "Zach Beauvais"

@@ -1,11 +1,11 @@
 <section id="about" class="section is-primary is-medium">
     <div class="container">
         <div class="columns is-centered is-vcentered">
-            <div class="column is-8">
+            <div class="column is-7">
                 <div class="content">
 
-                    <h2 class="title"> {{ with .Site.GetPage "section" "about" }}{{ .Title }}{{ end }}</h2>
-                    <h3 class="subtitle">{{ with .Site.GetPage "section" "about" }}{{ .Params.subtitle }}{{ end }}</h3>
+                    <!-- <h2 class="title"> {{ with .Site.GetPage "section" "about" }}{{ .Title }}{{ end }}</h2>
+                    <h3 class="subtitle">{{ with .Site.GetPage "section" "about" }}{{ .Params.subtitle }}{{ end }}</h3> -->
                     <div>
                     {{ with .Site.GetPage "section" "about" }}{{ .Content}}{{ end }}
                     </div>

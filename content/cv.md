@@ -1,10 +1,11 @@
----
-author: Zach Beauvais
-date: 2017-06-15 00:16:02+00:00
-draft: false
-title: cv
-type: single
----
++++
+author = "Zach Beauvais"
+date = "2017-06-15 00:16:02+00:00"
+draft = "false"
+title = "cv"
+no-title = "true"
+banner = "/general-banner.jpg"
++++
 
 <h2>Curriculum Vitae</h2>
 
