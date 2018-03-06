@@ -1,0 +1,28 @@
+{{ define "main"}}
+{{ partial "hero-image" . }}
+<section id="greenwood" class="section is-primary is-medium">
+    <div class="container">
+        <div class="columns is-centered is-vcentered">
+            <div class="column is-7">
+                <div class="content">
+                    <div>
+                        <h2 class="title">{{ .Params.title }}</h2>
+                    </div>
+                    <div>
+                        <h3 class="subtitle">{{ .Params.subtitle }}</h3>
+                    </div>
+                    <div>
+                   {{ .Content }}
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="column is-3">
+                
+                <img src="{{ .Params.image }}">
+                
+            </div>
+        </div>
+    </div>
+</section>{{ partial "post-list" . }}
+{{ end }}
