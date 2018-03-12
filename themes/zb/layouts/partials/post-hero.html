@@ -1,24 +1,40 @@
-  <section class="section">
 <section id="post-hero" class="section is-medium">
     <div class="container">
         <div class="columns is-centered is-vcentered">
             <div class="column is-7">
                 <div class="content">
-
-                    <!-- <h2 class="title"> {{ with .Site.GetPage "section" "about" }}{{ .Title }}{{ end }}</h2>
-                    <h3 class="subtitle">{{ with .Site.GetPage "section" "about" }}{{ .Params.subtitle }}{{ end }}</h3> -->
-                    <div>
-                    {{ with .Site.GetPage "section" "about" }}{{ .Content}}{{ end }}
-                    </div>
+                    {{ range first 1 (where .Data.Pages "Type" "post") }}
                     
+                    {{ if isset .Params "image" }}
+                    <div class="image">
+                        <a href="{{.URL}}" title="{{.Title}}">
+                        <img src="/images/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
+                    </a>
+                    </div>
+                    {{ else}}
+                    <div>
+                        <p>not set</p>
+                    </div>
+                    {{ end }}
+                    
+                    <h2 class="title">
+                    {{ .Title }}
+                    </h2>
+                    <div>
+                        <p class="is-small">
+                            Posted: {{ .PublishDate.Format "2 January, 2006" }}
+                        </p>
+                    </div>
+                    <div class="content">
+                        <p> {{ .Summary | markdownify}}</p>
+                        <br>
+                        <p>
+                            <a href="{{.URL}}" title="{{.Title}}">Read more&#8230;
+                            </p>
+                        </div>
+                        {{ end }}
+                    </div>
                 </div>
             </div>
-            <div class="column is-3">
-                
-                <img id="zb" src="{{ with .Site.GetPage "section" "about" }}{{ .Params.image }}{{ end }}">
-                
-            </div>
         </div>
-    </div>
-</section>
-  </section>
+    </section>

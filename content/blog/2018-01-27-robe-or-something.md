@@ -1,10 +1,12 @@
----
-title: "I thought I’d be wearing a robe or something."
-date: 2018-03-12T14:40:06-04:00
-draft: false
-subtitle: ""
-banner: "images/posts/2018-01-27/white_flower.jpg"
----
++++
+title = "Robe or Something"
+subtitle = ""
+date = "2018-01-27"
+draft = "false"
+author = "Zach Beauvais"
+type = "post"
+image = "/posts/2018-01-27/white_flower.jpg"
++++
 
 “So, this just swings over your jacket, and just hook this bit under your… where’s your tie?” The spindly man from Ede and Ravenscroft held some form of heavy, black wool cloth and cordage out to me. 
 
