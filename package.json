@@ -22,7 +22,7 @@
     "uncss": "^0.15.0"
   },
   "scripts": {
-    "start": "concurrently 'gulp' 'hugo server --theme=zb --buildDrafts --bind '0.0.0.0' ' 'open http://localhost:1313'",
+    "start": "concurrently 'gulp' 'hugo server --disableFastRender --theme=zb --buildDrafts --bind '0.0.0.0' ' 'open http://localhost:1313'",
     "build": "hugo && gulp build"
   },
   "repository": {

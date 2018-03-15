@@ -4,7 +4,7 @@ date: 2007-06-21 18:06:43+00:00
 draft: false
 title: Euro-septic
 type: post
-url: /archives/euro-septic/
+# url: /archives/euro-septic/
 categories:
 - Old stories
 ---

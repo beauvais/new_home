@@ -5,6 +5,7 @@ date = "2018-01-27"
 draft = "false"
 author = "Zach Beauvais"
 type = "post"
+layout = "blog"
 image = "/posts/2018-01-27/white_flower.jpg"
 +++
 

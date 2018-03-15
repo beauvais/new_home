@@ -2,7 +2,7 @@
   <header class="hero is-halfheight" style='background-image:url("/images/{{ .Params.banner }}");'>
     
     <div class="hero-head">
-      {{ partial "nav" .}}
+
     </div>
     <div class="hero-body">
       <div class="columns">
@@ -27,7 +27,6 @@
   </header>
 {{ else }}
 <header class="">
-      {{ partial "nav" . }}
   <div class="container">
     {{ if isset .Params "no-title" }}
 

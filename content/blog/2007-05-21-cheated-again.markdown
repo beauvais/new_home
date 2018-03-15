@@ -1,13 +1,14 @@
----
-author: admin
-date: 2007-05-21 18:15:00+00:00
-draft: false
-title: Cheated again
-type: post
-url: /archives/cheated-again/
-categories:
-- Old stories
----
++++
+title = "Cheated again"
+subtitle = ""
+date = "2007-05-21 18:15:00+00:00"
+draft = "false"
+author = "Zach Beauvais"
+type = "post"
+layout = "blog"
+image = ""
+categories = "Old stories,"
++++
 
 Along my bus route to work is a bakery which serves a cheap breakfast.
 Because I need to change busses just outside its window, I usually have
