@@ -5,7 +5,8 @@ date = "{{ .Date }}"
 draft = "true"
 author = "Zach Beauvais"
 type = "post"
-tags = ["", ""]
+tags = ["" ""]
+categories = [ "" ]
 image = "images/posts/"
 image_alt = ""
 +++

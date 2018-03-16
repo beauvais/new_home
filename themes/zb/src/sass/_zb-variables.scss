@@ -49,14 +49,20 @@ h1, h2, h3, h4, h5, h6 {
 // Layouts
 
 #site-nav {
-    background-color: $shadowbrown;
-    color: white;
+    background-color: $white;
+    color: stonegrey;
 
     :hover {}
 }
 
 $navbar-height: 4.3rem;
 $navbar-item-img-max-height: 3.583rem;
+
+  // .navbar-item {
+  //   flex-grow: 1;
+  //   flex-direction: column;
+  //   justify-content: center;
+  // }
 
 .has-hero-image {
     @extend .hero;

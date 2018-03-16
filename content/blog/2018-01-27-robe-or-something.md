@@ -6,6 +6,7 @@ draft = "false"
 author = "Zach Beauvais"
 type = "post"
 layout = "blog"
+categories = [ "life", "narrative" ]
 image = "/posts/2018-01-27/white_flower.jpg"
 +++
 
