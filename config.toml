@@ -16,5 +16,5 @@ canonifyURLS = false
     herotitle = "blogging perspective"
     owner = "Zach Beauvais"
 [taxonomies]
-  tag = "tags"
-  category = "categories"
+    tag = "tags"
+    category = "categories"

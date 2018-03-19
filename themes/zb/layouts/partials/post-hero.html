@@ -9,7 +9,7 @@
                     {{ if isset .Params "image" }}
                     <div class="image">
                         <a href="{{.URL}}" title="{{.Title}}">
-                            <img src="/images/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
+                            <img class="post-hero-image" src="/images/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
                         </a>
                     </div>
                     {{ else}}

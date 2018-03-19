@@ -1,10 +1,29 @@
 {{ define "main"}}
-{{ partial "hero-node" . }}
-<div class="columns is-centered is-vcentered">
-    <div class="column is-vcentered is-centered is-8">
-        <div class="content">
-            {{ .Content }}
+
+    <section class="section">
+    <div class="columns is-centered is-vcentered">
+        <div class="column is-7">
+            <div class="content">
+                {{ if isset .Params "image" }}
+                <div class="image">
+                    <a href="{{.URL}}" title="{{.Title}}">
+                        <img class="image" src="/images/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
+                    </a>
+                </div>
+                {{ else}}
+<!--                 <div>
+                    <p>not set</p>
+                </div> -->
+                {{ end }}
+            </div>
+            <div class="title">
+                <h2>{{ .Title }} </h2>
+            </div>
+            <div class="content">
+                {{ .Content }}
+            </div>
         </div>
     </div>
-</div>
+</section>
+
 {{ end }}

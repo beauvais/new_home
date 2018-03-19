@@ -48,15 +48,15 @@ h1, h2, h3, h4, h5, h6 {
 
 // Layouts
 
-#site-nav {
-    background-color: $white;
-    color: stonegrey;
+// #site-nav {
+//     // background-color: $white;
+//     color: stonegrey;
 
-    :hover {}
-}
+//     :hover {}
+// }
 
-$navbar-height: 4.3rem;
-$navbar-item-img-max-height: 3.583rem;
+// $navbar-height: 4.3rem;
+// $navbar-item-img-max-height: 3.583rem;
 
   // .navbar-item {
   //   flex-grow: 1;
@@ -89,6 +89,10 @@ $navbar-item-img-max-height: 3.583rem;
     min-width: 100%;
     top: 0;
     z-index: -1000;
+}
+
+.post-hero-image {
+    
 }
 
 .wood-title {
