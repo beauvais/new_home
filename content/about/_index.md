@@ -10,13 +10,12 @@ image = "/images/zb.png"
 +++
 
 
-I am Zach Beauvais – a writer and content strategist who likes to help people tell their stories. I came from the world of the web—writing here and there on places like ReadWriteWeb and ZDNet—and spent a few years as a community person at Talis for the emerging technology community of the Semantic Web.
+I am Zach Beauvais – a writer and content strategist who likes to help people tell their stories. I've worked mostly for web builders – software companies, and startups.
 
-My job titles have worked their way through guest author to evangelist and community manager, and—most fun so far—editor. From podcasting and writing, to creating community engagement plans for an incubated startup, I’ve tended to work around content and people, but try to keep my eye on big ideas.
+I've worn many job titles on name badges, from community manager to content strategist. I've tended to work with words and people, and keep my eye on big ideas.
 
-I [tweet][], [flick][], and do other webby verbs now and then.
-
-I also make and sell hand-carved items (like spoons) from green wood in the Etsy shop Wood from Trees.
+I make and sell hand-carved, useful things (like spoons) from green wood for the Etsy shop [Wood from Trees][etsy].
 
 [tweet]: https://twitter.com/beauvais
 [flick]: https://flickr.com/beauvais
+[etsy]: https://www.etsy.com/shop/WoodFromTrees
