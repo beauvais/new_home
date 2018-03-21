@@ -2,7 +2,13 @@
 <html>
 {{ partial "head" . }}
 <body class="has-navbar-fixed-top">
-{{ partial "nav" . }}
+{{ if .IsHome }}
+    {{ partial "index-nav" . }}
+{{ else }}
+    {{ partial "nav" . }}
+{{ end }}
+
+
 {{ block "main" .}}
 
 {{ end }}
