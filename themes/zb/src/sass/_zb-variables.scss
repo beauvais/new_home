@@ -18,18 +18,6 @@ $primary: $warmgrey;
     background-color: $leafgreen;
 }
 
-* .has-white-text {
-    color: $white;
-}
-
-* .is-primary {
-    background-color: $primary;
-}
-
-* .is-green {
-    background-color: $leafgreen;
-}
-
 // Typography
 $family-serif: "Lora", serif;
 $family-primary: $family-serif;
@@ -39,14 +27,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $family-headers;
 }
 
+//logo
+
 .logo-title {
     font-family: $family-serif;
     font-weight: 400;
     size: $size-1;
 }
 
-// images
-// nav and logo
 .logo {
     max-width: 12rem;
     display: block;
@@ -54,51 +42,29 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
 }
 
-.nav-logo {
-    height: $size-1;
-}
+// nav
 
-.navbar-end {
-    margin-right: $size-1 * 1.5;
+.navbar {
+    .nav-logo {
+        height: $size-1;
+    }
 
-    span {
-        vertical-align: baseline;
+    .navbar-brand {
+        margin-left: $size-1 * 1.5;
+    }
+
+    .navbar-menu {
+        .navbar-end {
+            margin-right: $size-1 * 1.5;
+
+            .navbar-item {
+                text-align: right;
+            }
+        }
     }
 }
 
-.burger .is-active {
-    div {
-        margin-right: 0px;
-    }
-}
-
-.navbar-brand {
-    margin-left: $size-1 * 1.5;
-}
-
-.navbar-end .navbar-item {
-    text-align: right;
-}
-
-// .navbar-burger.right {
-//     margin-right: auto;
-//     margin-left: auto;
-//     margin-left: 0;
-//     margin-right: 0;
-// }
-// Layouts
-// #site-nav {
-//     // background-color: $white;
-//     color: stonegrey;
-//     :hover {}
-// }
-// $navbar-height: 4.3rem;
-// $navbar-item-img-max-height: 3.583rem;
-// .navbar-item {
-//   flex-grow: 1;
-//   flex-direction: column;
-//   justify-content: center;
-// }
+// hero stuff
 .has-hero-image {
     @extend .hero;
 
