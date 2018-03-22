@@ -1,13 +1,9 @@
-
-
 // Colours
-
 $warmgrey: rgba(245, 242, 240, 0.9);
 $stonegrey: rgba(189, 172, 154, 0.8);
 $leafgreen: rgba(169, 194, 31, 0.9);
 $shadowbrown: rgba(41, 31, 14, 0.5);
 $white: rgba(256, 256, 256, 1);
-
 $primary: $warmgrey;
 
 * .has-white-text {
@@ -35,10 +31,9 @@ $primary: $warmgrey;
 }
 
 // Typography
-
-$family-serif: 'Lora', serif;
+$family-serif: "Lora", serif;
 $family-primary: $family-serif;
-$family-headers: 'Raleway', sans-serif;
+$family-headers: "Raleway", sans-serif;
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $family-headers;
@@ -51,8 +46,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // images
-
-
 // nav and logo
 .logo {
     max-width: 12rem;
@@ -61,19 +54,22 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
 }
 
-.nav-logo  {
+.nav-logo {
     height: $size-1;
 }
 
 .navbar-end {
     margin-right: $size-1 * 1.5;
+
     span {
         vertical-align: baseline;
     }
 }
 
 .burger .is-active {
-    margin-right: 0px;
+    div {
+        margin-right: 0px;
+    }
 }
 
 .navbar-brand {
@@ -84,37 +80,30 @@ h1, h2, h3, h4, h5, h6 {
     text-align: right;
 }
 
-
 // .navbar-burger.right {
 //     margin-right: auto;
 //     margin-left: auto;
 //     margin-left: 0;
 //     margin-right: 0;
 // }
-
 // Layouts
-
-
 // #site-nav {
 //     // background-color: $white;
 //     color: stonegrey;
-
 //     :hover {}
 // }
-
 // $navbar-height: 4.3rem;
 // $navbar-item-img-max-height: 3.583rem;
-
-  // .navbar-item {
-  //   flex-grow: 1;
-  //   flex-direction: column;
-  //   justify-content: center;
-  // }
-
+// .navbar-item {
+//   flex-grow: 1;
+//   flex-direction: column;
+//   justify-content: center;
+// }
 .has-hero-image {
     @extend .hero;
+
     background-image: url("/images/golden_trees.jpg");
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -125,7 +114,6 @@ h1, h2, h3, h4, h5, h6 {
     @include touch {
         background-attachment: scroll;
     }
-
 }
 
 .hero-node {
@@ -138,9 +126,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -1000;
 }
 
-.post-hero-image {
-    
-}
+.post-hero-image {}
 
 .wood-title {
     @extend .title;
