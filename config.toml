@@ -1,4 +1,4 @@
-title = "Zach Beauvais – coffee drinker, writer, and content strategist"
+title = "Zach Beauvais – writer, wood worker, word strategist"
 baseURL = "/"
 publishDir = "public"
 # tags = ["portfolio", "web design", "blog"]
@@ -13,7 +13,7 @@ canonifyURLS = false
 [Permalinks]
     post = "/:section/:title/"
 [Params]
-    herotitle = "blogging perspective"
+    subtitle = "Writer, wood worker, word strategist"
     owner = "Zach Beauvais"
 [taxonomies]
     tag = "tags"
