@@ -1,22 +1,17 @@
 <nav  class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
-    <div class="navbar-menu is-transparent">
-        <div class="navbar-brand">
-            
+    <div class="navbar-brand">
+        <div id="burger" class="navbar-burger burger right" onclick="toggleBurger()" data-target="nav-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+    </div>
+    <div id="nav-menu" class="navbar-menu ">
         <div class="navbar-end">
-            <a href="/" class="navbar-item">
-                Home
-            </a>
-            <a href="/blog" class="navbar-item">
-                Blog
-            </a>
-            <a href="/bio" class="navbar-item">
-                Bio
-            </a>
-            <a href="/cv" class="navbar-item">
-                CV
-            </a>
-            
+            <a href="/" class="navbar-item"><span>Home</span></a>
+            <a href="/blog" class="navbar-item"><span>Blog</span></a>
+            <a href="/bio" class="navbar-item"><span>Bio</span></a>
+            <a href="/cv" class="navbar-item"><span>CV</span></a>
             <span class="navbar-item">
                 <a href="https://www.etsy.com/shop/WoodFromTrees" class="button is-green">
                     <span class="icon">
@@ -29,3 +24,11 @@
         </div>
     </div>
 </nav>
+<script  type="text/javascript" charset="utf-8" async defer>
+const toggleBurger = () => {
+let burgerIcon = document.getElementById('burger');
+let dropMenu = document.getElementById('nav-menu');
+burgerIcon.classList.toggle('is-active');
+dropMenu.classList.toggle('is-active');
+};
+</script>

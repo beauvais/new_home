@@ -52,6 +52,8 @@ h1, h2, h3, h4, h5, h6 {
 
 // images
 
+
+// nav and logo
 .logo {
     max-width: 12rem;
     display: block;
@@ -61,12 +63,34 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-logo  {
     height: $size-1;
-    margin-left: $size-1;
 }
 
 .navbar-end {
-    margin-right: $size-1;
+    margin-right: $size-1 * 1.5;
+    span {
+        vertical-align: baseline;
+    }
 }
+
+.burger .is-active {
+    margin-right: 0px;
+}
+
+.navbar-brand {
+    margin-left: $size-1 * 1.5;
+}
+
+.navbar-end .navbar-item {
+    text-align: right;
+}
+
+
+// .navbar-burger.right {
+//     margin-right: auto;
+//     margin-left: auto;
+//     margin-left: 0;
+//     margin-right: 0;
+// }
 
 // Layouts
 
