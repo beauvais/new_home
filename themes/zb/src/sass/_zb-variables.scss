@@ -54,13 +54,14 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .navbar-menu {
-        .navbar-end {
-            margin-right: $size-1 * 1.5;
+        margin-right: $size-1 * 1.5;
 
-            .navbar-item {
-                text-align: right;
-            }
-        }
+        // .navbar-end {
+        //     .navbar-item {
+        //         text-align: right;
+        //     }
+        // }
+   
     }
 }
 

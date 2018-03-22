@@ -1,6 +1,6 @@
 <nav  class="navbar is-transparent is-fixed-top" aria-label="main navigation">
     <div class="navbar-brand">
-        <div id="burger" class="navbar-burger burger right" onclick="toggleBurger()" data-target="nav-menu">
+        <div id="burger" class="navbar-burger burger" onclick="toggleBurger()" data-target="nav-menu">
             <span></span>
             <span></span>
             <span></span>
@@ -8,19 +8,33 @@
     </div>
     <div id="nav-menu" class="navbar-menu ">
         <div class="navbar-end">
-            <a href="/" class="navbar-item"><span>Home</span></a>
-            <a href="/blog" class="navbar-item"><span>Blog</span></a>
-            <a href="/bio" class="navbar-item"><span>Bio</span></a>
-            <a href="/cv" class="navbar-item"><span>CV</span></a>
-            <span class="navbar-item">
-                <a href="https://www.etsy.com/shop/WoodFromTrees" class="button is-green">
-                    <span class="icon">
-                        <i class="fa fa-etsy"></i>
-                    </span>
-                    <span>Etsy Shop</span>
+            <div class="level-right">
+                <a href="/" class="navbar-item">Home</a>
+                <a href="/blog" class="navbar-item">Blog</a>
+                <a href="/bio" class="navbar-item">Bio</a>
+                <a href="/cv" class="navbar-item">CV</a>
+            </div>
+            <div class="level-right is-grouped">
+                <a href="https://twitter.com/beauvais" class="navbar-item">
+                    <i class="fa fa-twitter"></i>
                 </a>
-            </span>
-            
+                <a href="https://www.instagram.com/zbeauvais/" class="navbar-item">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com/in/zachbeauvais" class="navbar-item">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="level-right">
+                <span class="navbar-item">
+                    <a href="https://www.etsy.com/shop/WoodFromTrees" class="button is-green">
+                        <span class="icon">
+                            <i class="fa fa-etsy"></i>
+                        </span>
+                        <span>Etsy Shop</span>
+                    </a>
+                </span>
+            </div>
         </div>
     </div>
 </nav>
