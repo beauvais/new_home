@@ -3,19 +3,14 @@
         <div class="columns is-centered is-vcentered">
             <div class="column is-7">
                 <div class="content">
-
-                    <!-- <h2 class="title"> {{ with .Site.GetPage "section" "about" }}{{ .Title }}{{ end }}</h2>
-                    <h3 class="subtitle">{{ with .Site.GetPage "section" "about" }}{{ .Params.subtitle }}{{ end }}</h3> -->
+                    <h2 class="title"> {{ with .Site.GetPage "section" "about" }}{{ .Title }}{{ end }}</h2>
                     <div>
-                    {{ with .Site.GetPage "section" "about" }}{{ .Content}}{{ end }}
+                        {{ with .Site.GetPage "section" "about" }}{{ .Content}}{{ end }}
                     </div>
-                    
                 </div>
             </div>
             <div class="column is-3 has-text-centered">
-                
-                <img id="zb" src="{{ with .Site.GetPage "section" "about" }}{{ .Params.image }}{{ end }}">
-                
+                <img id="zb" alt="photo of author" src="{{ with .Site.GetPage "section" "about" }}{{ .Params.image }}{{ end }}">
             </div>
         </div>
     </div>
