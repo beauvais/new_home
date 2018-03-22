@@ -11,7 +11,7 @@ banner = "/general-banner.jpg"
 
 <em>To communicate well, and bring perspective to ideas.</em>
 
-<h2>Summary<a name="summary"></a></h2>
+<h2>Summary<a id="summary"></a></h2>
 
 I am a writer and strategist who likes to help people tell their stories. I've written for places like ReadWriteWeb and ZDNet, and I spent a few years as the community person at Talis for the emerging technology community of the Semantic Web.
 
@@ -26,7 +26,7 @@ My job titles have worked their way through guest author to evangelist and commu
 
 <h2>Work</h2>
 
-<h3>Head of content and communities at <a href="http://www.zengenti.com">Zengenti</a><a name="job_zengenti"></a></h3>
+<h3>Head of content and communities at <a href="http://www.zengenti.com">Zengenti</a><a id="job_zengenti"></a></h3>
 
 <em>September 2014 – Now, Shropshire, United Kingdom</em>
 
@@ -44,7 +44,7 @@ I have learnt a lot from Zach, particularly around language - I now feel even mo
 He's a deep thinker, and I value his input on many areas including sales, marketing, and community development."
 </blockquote>
 
-<h3>Content strategist for <a href="http://this.isfluent.com">Fluent</a><a name="job_fluent"></a></h3>
+<h3>Content strategist for <a href="http://this.isfluent.com">Fluent</a><a id="job_fluent"></a></h3>
 
 <em>June 2013 – September 2014 (1 year, 4 months) Cambridge, United Kingdom</em>
 
@@ -56,7 +56,7 @@ I was Fluent's in-house content strategist. Fluent designs and builds websites f
   "Zach and I worked together at Fluent on web projects for about a year. He's friendly, willing to get stuck in and thoughtful in the way he approaches everything he does. A great addition to any team - and he'll make you a spoon with an axe!?
 </blockquote>
 
-<h3>Community manager for <a href="http://scraperwiki.com">ScraperWiki</a><a name="job_scraperwiki"></a></h3>
+<h3>Community manager for <a href="http://scraperwiki.com">ScraperWiki</a><a id="job_scraperwiki"></a></h3>
 
 <em>February 2013 – June 2013 (5 months) Liverpool, United Kingdom</em>
 
@@ -68,13 +68,13 @@ Scraperwiki hired me to manage their community of journalists and developers. In
   “Zach is a skilled communicator who has a deep understanding of data and how it is used in the world. He can handle all aspects of managing a community in the Internet Age - from social media and newsletters through to supporting customers individually. He’s particularly interested in learning general conclusions from behaviour of the community, and making sure this feedback improves the product. And in coffee!”
 </blockquote>
 
-<h3>Digital community manager for <a href="http://www.emeraldgrouppublishing.com">Emerald Group Publishing</a><a name="job_emerald"></a></h3>
+<h3>Digital community manager for <a href="http://www.emeraldgrouppublishing.com">Emerald Group Publishing</a><a id="job_emerald"></a></h3>
 
 <em>June 2012 – February 2013 (9 months) Yorkshire, United Kingdom</em>
 
 I helped Emerald prepare for its first digital community offerings, looked after interns, and built up a working group within the company to support their online efforts. This involved pitching the very idea of a digital community to sceptical directors, and liaising with academics to support Emerald’s first community project, which has since been launched at networkedscholar.com. It worked like a kind of internal consultant on many projects across divisions as part of the Digital team.
 
-<h3>Community manager for Kasabi<a name="job_kasabi"></a></h3>
+<h3>Community manager for Kasabi<a id="job_kasabi"></a></h3>
 
 <em>January 2011 - June 2011 (6 months) Birmingham, United Kingdom</em>
 
@@ -86,7 +86,7 @@ Kasabi was a data marketplace startup project at Talis, and I had the privilege 
   “Zach is really passionate about connecting with the community, he successfully built up a network of connections first as the editor of Nodalities magazine and later as community manager for Kasabi. He is enthusiastic and keen to learn new skills.”
 </blockquote>
 
-<h3>Editor of Nodalities Magazine and platform evangelist at <a href="http://www.talis.com">Talis</a><a name="job_talis"></a></h3>
+<h3>Editor of Nodalities Magazine and platform evangelist at <a href="http://www.talis.com">Talis</a><a id="job_talis"></a></h3>
 
 <em>April 2008 - December 2010 (2 years, 10 months) Birmingham, United Kingdom</em>
 
@@ -100,9 +100,9 @@ As editor of the Magazine of the Semantic Web, <a href="https://github.com/beauv
   “I worked closely with Zach throughout his career at Talis. He has a valuable talent to turn abstract ideas and processes into understandable information. He possesses a curious mind and a fascinating combination of cultural insight and an interest in new technologies. Zach is always willing to share his knowledge and his energy and positive attitude makes it great to work with him for partners and colleagues alike. I would thoroughly recommend Zach and would be more than pleased to work with him again in the future.”
 </blockquote>
 
-<h2>Education:<a name="education"></a></h2>
+<h2>Education:<a id="education"></a></h2>
 
-<h3>BA (hons): English Language and Communication<a name="kcl"></a></h3>
+<h3>BA (hons): English Language and Communication<a id="kcl"></a></h3>
 
 <em>King’s College London Sep 2003 - Jul 2006</em>
 
@@ -122,7 +122,7 @@ As a bit of a side project, I started a digital magazine for green woodworkers. 
 
 I'm one of a handful of admins for the Facebook group [Spoon Carving, Green Woodworking, and Sloyd](https://www.facebook.com/groups/GreenWoodWork/). With more than 15,000 members, we're fairly sure this is the biggest digital gathering of people interested in green woodworking.
 
-<h2>Writing samples<a name="writing"></a></h2>
+<h2>Writing samples<a id="writing"></a></h2>
 
 Alongside writing for various company blogs, Nodalties magazine, and creating marketing material, I have also written for online publications including these:
 
@@ -132,7 +132,7 @@ Alongside writing for various company blogs, Nodalties magazine, and creating ma
 <li>ReadWriteWeb: <a href="http://readwrite.com/2009/10/01/seedcamp-web-era-support-for-startups/">“Seedcamp—Web-era Support for Startups”</a></li>
 </ul>
 
-<h2>Interests:<a name="interests"></a></h2>
+<h2>Interests:<a id="interests"></a></h2>
 
 A quick tag-cloud of my blog would probably show that my interests centre around forestry and woodworking, coffee,  and language. I like sharing ideas, and getting others to do so too, so a friend and I started the Shropgeek gathering, which has become an annual conference.
 
