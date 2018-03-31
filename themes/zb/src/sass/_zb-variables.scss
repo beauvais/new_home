@@ -18,6 +18,15 @@ $primary: $warmgrey;
     background-color: $leafgreen;
 }
 
+// body {
+//   background: linear-gradient(
+//     to left, 
+//     #fff 67%, 
+//     $warmgrey 33%, 
+    
+//   );
+// }
+
 // Typography
 $family-serif: "Lora", serif;
 $family-primary: $family-serif;
@@ -33,6 +42,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $family-serif;
     font-weight: 400;
     size: $size-1;
+}
+
+#logo {
+    opacity: 0.9;
 }
 
 .logo {
