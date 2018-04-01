@@ -1,34 +1,37 @@
-<section id="posts" class="section  is-small">
+<div id="post-list">
     
-    <div class="columns is-centered is-vcentered">
-        <div class="column is-vcentered is-centered ">
-            <div class="content">
-            <h2 class="title">Latest posts</h2>
-            <div class="tile is-ancestor">
-                {{ range first 3 (where .Data.Pages "Type" "post") }}
-                <div class="tile box is-shadowless is-child is-4">
-                    <a href="{{.URL}}" title="{{.Title}}">
-                        <div>
-                            <h3 class="title">
-                            {{ .Title }}
-                            </h3>
-                            <p class="is-small is-pulled-right">
-                                Posted: {{ .PublishDate.Format "2 January, 2006" }}
-                            </p>
-                            <br>
-                            <br>
-                            <p>
-                                {{slicestr .Summary 0 140 | markdownify}}&#8230;
-                                <br>
-                                Read more.
-                                
-                            </p>
+    <section class="section  is-small">
+        
+        <div class="columns is-centered is-vcentered">
+            <div class="column is-vcentered is-centered ">
+                <div class="content">
+                    <h2 class="title">Latest posts</h2>
+                    <div class="tile is-ancestor">
+                        {{ range first 3 (where .Data.Pages "Type" "post") }}
+                        <div class="tile box is-shadowless is-child is-4">
+                            <a href="{{.URL}}" title="{{.Title}}">
+                                <div>
+                                    <h3 class="title">
+                                    {{ .Title }}
+                                    </h3>
+                                    <p class="is-small is-pulled-right">
+                                        Posted: {{ .PublishDate.Format "2 January, 2006" }}
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <p>
+                                        {{slicestr .Summary 0 140 | markdownify}}&#8230;
+                                        <br>
+                                        Read more.
+                                        
+                                    </p>
+                                </div>
+                            </a>
                         </div>
-                    </a>
+                        {{ end }}
+                    </div>
                 </div>
-                {{ end }}
             </div>
         </div>
-    </div>
-    </div>
-</section>
+    </section>
+</div>

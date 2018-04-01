@@ -1,25 +1,45 @@
-<header class="hero has-hero-image is-fullheight">
-  
-  <div class="hero-head">
-  </div>
-  <div class="hero-body">
-      <div class="is-centered has-text-centered">
-        <div id="hero-title" class="container">
-          <div class="logo">
-                    <img id="logo" class="image" src="{{ .Site.Params.logowhite }}" alt="logo that says Zach">
-                </div>
-          <h1 class="title has-white-text is-1">
-          {{ .Site.Params.owner }}
-          </h1>
-          <h2 class="subtitle has-white-text is-2">
-            {{ .Site.Params.subtitle }}
-          </h2>
-        </div>
-        
-      </div>
+<div class="hero has-hero-image is-fullheight">
+  <!-- <div class="hero-body"> -->
+  <div class="hero-body columns">
+    <div class="column is-one-third is-offset-two-thirds has-text-centered">
+      <!--   <div class="logo">
+        <img id="logo" class="image" src="{{ .Site.Params.logowhite }}" alt="logo that says Zach">
+      </div> -->
+      <!--       <h2 class="subtitle has-white-text is-2">
+      {{ .Site.Params.subtitle }}
+      </h2> -->
     </div>
   </div>
   <div class="hero-footer">
-    
+    <div class="logo is-pulled-right">
+      <img id="logo" class="image" src="{{ .Site.Params.logowhite }}" alt="logo that says Zach">
+    </div>
+    <!--    <h1 class="title has-white-text is-1">
+    {{ .Site.Params.owner }}
+    </h1> -->
+    <div class="columns">
+      <div class="column  is-one-third">
+        <a href="#post-list">
+          <div>
+            <h2 class="title has-white-text has-text-centered">writer</h2>
+          </div>
+        </a>
+      </div>
+      <div class="column is-one-third">
+        <a href="#greenwood">
+          <div>
+            <h2 class="title has-white-text has-text-centered">wood worker</h2>
+          </div>
+        </a>
+      </div>
+      <div class="column is-one-third">
+        <a href="#about">
+          <div>
+            <h2 class="title has-white-text has-text-centered">word strategist</h2>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
-</header>
+</div>
+<!-- </div> -->
