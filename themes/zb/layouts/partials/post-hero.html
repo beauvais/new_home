@@ -1,21 +1,22 @@
+<!-- partials/post-hero -->
 <section id="post-hero" class="section is-small">
     <div class="columns is-centered is-vcentered">
-    <div class="column is-9">
-        {{ range first 1 (where .Data.Pages "Type" "post") }}
-        
-        {{ if isset .Params "image" }}
-        <div class="image">
-            <a href="{{.URL}}" title="{{.Title}}">
-                <img class="post-hero-image" src="/images/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
-            </a>
+        <div class="column is-9">
+            {{ range first 1 (where .Data.Pages "Type" "post") }}
+            
+            {{ if isset .Params "image" }}
+            <div class="image">
+                <a href="{{.URL}}" title="{{.Title}}">
+                    <img class="post-hero-image" src="/images/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
+                </a>
+            </div>
+            {{ else}}
+            <div>
+                <p>not set</p>
+            </div>
+            {{ end }}
         </div>
-        {{ else}}
-        <div>
-            <p>not set</p>
-        </div>
-        {{ end }}
     </div>
-</div>
     <div class="columns is-centered is-vcentered">
         <div class="column is-7">
             <!-- Gets latest blog post to display on homepage -->
@@ -50,5 +51,4 @@
         </div>
     </div>
 </div>
-
 </section>
