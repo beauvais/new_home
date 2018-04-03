@@ -80,11 +80,32 @@ h1, h2, h3, h4, h5, h6 {
 
 // post stuff
 
-#post-list {
-    
-}
+#post-list {}
 
 // hero stuff
+
+.post-banner {
+    @extend .hero;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(/images/post-index-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    @include touch {
+        background-attachment: scroll;
+    }
+}
+
+.post-banner-blurb {
+    color: $white;
+}
+
 .has-hero-image {
     @extend .hero;
 
