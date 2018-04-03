@@ -6,6 +6,7 @@ languageCode = "en-GB"
 config = "config.toml"
 theme = "zb"
 canonifyURLS = false
+summaryLength = 100
 # relativeURLs = true
 # googleAnalytics = "UA-107957056-1"
 # disqusShortname = ""

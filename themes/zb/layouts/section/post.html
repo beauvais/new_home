@@ -1,0 +1,100 @@
+{{ define "main"}}
+<div class="container">
+    <!-- START ARTICLE FEED -->
+    <section class="section is-medium">
+        <div class="column is-8 is-offset-2">
+            <h2 class="title">{{ .Title }}</h2>
+            <!-- START ARTICLE -->
+            {{ range first 4 .Data.Pages.ByPublishDate.Reverse }} <!-- gets latest blog posts -->
+            <div class="card article">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-center">
+                            {{ if isset .Params "image" }} <!-- uses post image -->
+                            <a href="{{.URL}}" title="{{.Title}}">
+                                <img class="author-image" src="/images/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
+                            </a>
+                            {{ else}}
+                            <a href="{{.URL}}" title="{{.Title}}">
+                                <img class="author-image" src="/images/newspaper.svg" alt="icon of newspaper article from Font Awesome">
+                            </a>
+                            {{ end }} <!-- end of post image -->
+                        </div>
+                        <!-- post metadata -->
+                        <div class="media-content has-text-centered">
+                            <a href="{{ .Permalink }}">
+                                <h2 class="title article-title">
+                                {{ .Title }}
+                                </h2>
+                            </a>
+                            <div class="level article-metadata">
+                                <div class="level-item">
+                                    <a href="{{ .Permalink }}">
+                                        <time>{{ .Date.Format "2 Jan, 2006" }}</time>
+                                    </a>
+                                </div>
+                                <div class="level-item">
+                                    <p>{{ .ReadingTime }}-minute read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- post summary -->
+                    <div class="content article-body">
+                        {{ .Summary | markdownify }}
+                        {{ if .Truncated }}
+                        <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+                        <div class="article-footer">
+                            <div class="level">
+                                <div class="level-item">
+                                    <div class="button">
+                                        <a href="{{ .RelPermalink }}"><p>Read the rest...</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+</div>
+<!-- END ARTICLE -->
+<section class="section is-medium">
+    <div class="content">
+        <h1>{{ .Title }}</h1>
+        <p>/section/blog.html</p>
+    </div>
+</section>
+<div class="container">
+    <!-- orders content (reversed) according to the "publishdate" field in front matter -->
+    <div class="tile is-ancestor">
+        {{ range first 4 .Data.Pages.ByPublishDate.Reverse }}
+        <div class="tile is-parent is-3">
+            <article class="tile is-child box is-shadowless">
+                <div class="image">
+                    {{ if isset .Params "image" }}
+                    <figure class="image is-128x128">
+                        <a href="{{.URL}}" title="{{.Title}}">
+                            <img  src="/images/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
+                        </a>
+                    </figure>
+                    {{ else}}
+                    
+                    <i class="far fa-newspaper fa-10x"></i>
+                    
+                    {{ end }}
+                </div>
+                <div class="">
+                    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+                    <time>{{ .Date.Format "2 Jan, 2006" }}</time>
+                </div>
+            </article>
+        </div>
+        {{ end }}
+        
+    </div>
+</div>
+{{ end }}

@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-{{ partial "head" . }}
-<body class="has-navbar-fixed-top">
-{{ if .IsHome }}
-    {{ partial "index-nav" . }}
-{{ else }}
-    {{ partial "nav" . }}
-{{ end }}
-
-
-{{ block "main" .}}
-
-{{ end }}
-  {{ partial "footer" .}}
-</body>
+    {{ partial "head" . }}
+    <body class="has-navbar-fixed-top">
+        <!-- {{ if .IsHome }}
+        {{ partial "index-nav" . }}
+        {{ else }}
+        {{ partial "nav" . }}
+        {{ end }} -->
+        {{ partial "nav" . }}
+        {{ block "main" .}}
+        {{ end }}
+        {{ partial "footer" .}}
+    </body>
 </html>
