@@ -1,28 +1,30 @@
 {{ define "main"}}
+{{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
 <section class="section post-banner darken has-white-text is-medium">
-        <div class="column is-8 is-offset-2">
-            <h1 class="title has-white-text">{{ .Title }}</h1>
-            <h2 class="subtitle has-white-text is-4">{{ .Params.subtitle | markdownify}}</h2>
-            <div class="content ">
-                {{ .Content }}
-            </div>
+    <div class="column is-8 is-offset-2">
+        <h1 class="title has-white-text">{{ .Title }}</h1>
+        <h2 class="subtitle has-white-text is-4">{{ .Params.subtitle | markdownify}}</h2>
+        <div class="content ">
+            {{ .Content }}
         </div>
-    </section>
+    </div>
+</section>
 <div class="container">
     <!-- START ARTICLE FEED -->
     <section class="section is-small">
         <div class="column is-8 is-offset-2">
             <!-- START ARTICLE -->
-            {{ range first 4 .Data.Pages.ByPublishDate.Reverse }} <!-- gets latest blog posts -->
+            {{ range $paginator.Pages.ByPublishDate.Reverse }}
+            <!-- gets latest blog posts -->
             <div class="has-white-text card article" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/images/{{ .Params.image }});
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;">
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;">
                 <div class="card-content">
                     <div class="media">
                         <div class="media-center">
@@ -92,11 +94,26 @@
                     {{ end }}
                 </div>
             </div>
-        
-    
-    {{ end }}
-</div>
-</div>
+            
+            
+            {{ end }}
+            <footer class="section is-small">
+                <div class="level" >
+                    
+                    {{ if $paginator.HasPrev }}
+                    <div class="level-item">
+                        <a href="{{ .Site.BaseURL }}{{ $paginator.Prev.URL }}" class="button">Read newer posts</a>
+                    </div>
+                    {{ end }}
+                    {{ if $paginator.HasNext }}
+                    <div class="level-item">
+                        <a href="{{ .Site.BaseURL }}{{ $paginator.Next.URL }}" class="button">Read older posts</a>
+                    </div>
+                    {{ end }}
+                </div>
+            </footer>
+        </div>
+    </div>
 </section>
 <!-- END ARTICLE -->
 <!-- end of main -->
