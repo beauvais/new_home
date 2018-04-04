@@ -1,13 +1,9 @@
-<!-- _default/baseof -->
 <!DOCTYPE html>
+<!-- _default/baseof -->
+
 <html lang="en">
     {{ partial "head" . }}
     <body class="has-navbar-fixed-top">
-        <!-- {{ if .IsHome }}
-        {{ partial "index-nav" . }}
-        {{ else }}
-        {{ partial "nav" . }}
-        {{ end }} -->
         {{ partial "nav" . }}
         {{ block "main" .}}
         {{ end }}

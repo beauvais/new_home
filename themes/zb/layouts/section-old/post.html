@@ -1,0 +1,104 @@
+{{ define "main"}}
+<!-- section/post -->
+<section class="section post-banner darken has-white-text is-medium">
+        <div class="column is-8 is-offset-2">
+            <h1 class="title has-white-text">{{ .Title }} section/post.html</h1>
+            <h2 class="subtitle has-white-text is-4">{{ .Params.subtitle | markdownify}}</h2>
+            <div class="content ">
+                {{ .Content }}
+            </div>
+        </div>
+    </section>
+<div class="container">
+    <!-- START ARTICLE FEED -->
+    <section class="section is-small">
+        <div class="column is-8 is-offset-2">
+            <!-- START ARTICLE -->
+            {{ range first 4 .Data.Pages.ByPublishDate.Reverse }} <!-- gets latest blog posts -->
+            <div class="has-white-text card article" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/images/{{ .Params.image }});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-center">
+                            <a href="{{.URL}}" title="{{.Title}}">
+                                <img class="author-image" src="/images/pencil-alt.svg" alt="icon of newspaper article from Font Awesome">
+                            </a>
+                        </div>
+                        <!-- post metadata -->
+                        <div class="media-content has-text-centered">
+                            <a href="{{ .Permalink }}">
+                                <h2 class="title article-title has-white-text">
+                                {{ .Title }}
+                                </h2>
+                            </a>
+                            <div class="level has-white-text article-metadata">
+                                <div class="level-item has-white-text">
+                                    <a class="has-white-text" href="{{ .Permalink }}">
+                                        <time>{{ .Date.Format "2 Jan, 2006" }}</time>
+                                    </a>
+                                </div>
+                                <div class="level-item">
+                                    <p>{{ .ReadingTime }}-minute read</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- post summary -->
+                    <div class="columns is-vcentered">
+                        <div class="column is-8">
+                            <div class="content">
+                                {{ .Summary | markdownify }}
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            {{ if isset .Params "image" }} <!-- uses post image -->
+                            
+                            <div class="image">
+                                <a href="{{.URL}}" title="{{.Title}}">
+                                    <img  src="/images/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
+                                </a>
+                            </div>
+                            {{ else}}
+                            <div class="image">
+                                <a href="{{.URL}}" title="{{.Title}}">
+                                    <img  src="/images/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
+                                </a>
+                            </div>
+                            <div class="image">
+                                <a href="{{.URL}}" title="{{.Title}}">
+                                    <img class="image" src="/images/newspaper.svg" alt="icon of newspaper article from Font Awesome">
+                                </a>
+                            </div>
+                            {{ end }}
+                        </div>
+                    </div>
+                    {{ if .Truncated }}
+                    <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+                    <div class="article-footer">
+                        <div class="level">
+                            <div class="level-item">
+                                <div class="button">
+                                    <a href="{{ .RelPermalink }}"><p>Read the rest...</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        
+    
+    {{ end }}
+</div>
+</div>
+</section>
+<!-- END ARTICLE -->
+<!-- end of main -->
+{{ end }}
