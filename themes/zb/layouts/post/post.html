@@ -102,12 +102,12 @@
                     
                     {{ if $paginator.HasPrev }}
                     <div class="level-item">
-                        <a href="{{ .Site.BaseURL }}{{ $paginator.Prev.URL }}" class="button">Read newer posts</a>
+                        <a href="{{ $paginator.Prev.URL }}" class="button">Read newer posts</a>
                     </div>
                     {{ end }}
                     {{ if $paginator.HasNext }}
                     <div class="level-item">
-                        <a href="{{ .Site.BaseURL }}{{ $paginator.Next.URL }}" class="button">Read older posts</a>
+                        <a href="{{ $paginator.Next.URL }}" class="button">Read older posts</a>
                     </div>
                     {{ end }}
                 </div>
