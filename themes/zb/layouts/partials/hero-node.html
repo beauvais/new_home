@@ -1,36 +1,31 @@
 <!-- partials/hero-node -->
-{{ if isset .Params "banner" }}
-  <header class="hero is-halfheight" style='background-image:url("/images/{{ .Params.banner }}");'>
-    
-    <div class="hero-head">
-
-    </div>
-    <div class="hero-body">
-      <div class="columns">
-        <div class="column is-4">
-          
-        </div>
-         {{ if isset .Params "no-title" }}
-
-        {{ else }}
-        <div class="column is-8">
-          <div id="hero-title" class="container">
-            <h1 class="title has-white-text is-1">
-            {{ .Title }}
-            </h1>
-          </div>
-        </div>
-        {{ end }}
+{{ if isset .Params "image" }}
+<header class="hero has-hero-image is-fullheight" style='background-image:url("/images/{{ .Params.image }}");'>
+  <div class="hero-body">
+    <div class="columns">
+      <div class="column is-4">
+        
       </div>
+      {{ if isset .Params "no-title" }}
+      {{ else }}
+      <div class="column is-8">
+        <div id="hero-title" class="container">
+          <h1 class="title has-white-text is-1 is-shadow">
+          {{ .Title }}
+          </h1>
+        </div>
+      </div>
+      {{ end }}
     </div>
-    <div class="hero-footer">
-    </div>
-  </header>
+  </div>
+  <div class="hero-footer">
+    
+  </div>
+</header>
 {{ else }}
 <header class="">
   <div class="container">
     {{ if isset .Params "no-title" }}
-
     {{ else }}
     <div>
       <h2 class="title">{{ .Params.Title }}</h2>
@@ -38,21 +33,5 @@
     {{ end }}
   </div>
   
-</header><!-- /header -->
-{{ end }}
-<!--
-<header class="hero is-small">
-  <img src={{ if isset .Params "banner" }}"/images/{{ .Params.banner }}"{{ else }}"/images/general-banner.jpg"{{ end }} alt="banner image">
-  
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title is-1"><span class="title-wrap">{{ if isset .Params "subtitle" }}{{ .Params.subtitle }}{{ else }}{{ .Title }}{{ end }}</span></h1>
-      
-    </div>
-    
-    
-  </div>
-  <div class="hero-foot has-text-centered">
-    
-  </div>
-</header> -->
+  </header><!-- /header -->
+  {{ end }}

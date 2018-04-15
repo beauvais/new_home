@@ -1,34 +1,30 @@
 {{ define "main"}}
 <!-- _default/blog -->
+{{ partial "hero-node" .}}
 <section class="section is-medium">
-<div class="columns is-centered is-vcentered">
-    <div class="column is-vcentered is-centered is-8">
-        <div class="content">
-            {{ if isset .Params "image" }}
-            <div class="image">
-                <a href="{{.URL}}" title="{{.Title}}">
-                    <img class="image" src="/images/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
-                </a>
+    <div class="columns is-centered is-vcentered">
+        <div class="column is-vcentered is-centered is-8">
+            <div class="title">
+                <h2>{{ .Title }} </h2>
             </div>
-            {{ else}}
-            <div>
-                <p>not set</p>
+            <div class="level">
+                <div class="level-item">
+                    <p class="heading">Posted on: {{ .PublishDate.Format "2 January, 2006" }} </p>
+                </div>
+                 {{ if isset .Params "categories" }}
+                <div class="level-item">
+                    <p class="heading">In: {{ range .Params.categories }} <a href="{{ delimit (slice "/categories/" (urlize .) $.Site.Params.ugly) "" | relURL }}"> {{ . }}&nbsp;</a> {{ end }}</p>
+                </div>
+                 {{ end }}
+                <div class="level-item">
+                    <p class="heading"> {{ .ReadingTime }} min read</p>
+                </div>
+                <hr>
             </div>
-            {{ end }}
-        </div>
-        <div class="title">
-            <h2>{{ .Title }} </h2>
-        </div>
-        <div class="level">
-            <div class="level-item">
-               <p class="heading"> {{ .ReadingTime }} min read</p>
+            <div class="content">
+                {{ .Content }}
             </div>
-            <hr>
-        </div>
-        <div class="content">
-            {{ .Content }}
         </div>
     </div>
-</div>
 </section>
 {{ end }}
