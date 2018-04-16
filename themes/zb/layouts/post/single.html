@@ -11,11 +11,13 @@
                 <div class="level-item">
                     <p class="heading">Posted on: {{ .PublishDate.Format "2 January, 2006" }} </p>
                 </div>
-                 {{ if isset .Params "categories" }}
+                {{ if isset .Params "categories" }}
                 <div class="level-item">
-                    <p class="heading">In: {{ range .Params.categories }} <a href="{{ delimit (slice "/categories/" (urlize .) $.Site.Params.ugly) "" | relURL }}"> {{ . }}&nbsp;</a> {{ end }}</p>
+                    <p class="heading">In:  {{ range .Params.categories }}
+                        <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                    {{ end }}</p>
                 </div>
-                 {{ end }}
+                {{ end }}
                 <div class="level-item">
                     <p class="heading"> {{ .ReadingTime }} min read</p>
                 </div>

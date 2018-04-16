@@ -5,8 +5,6 @@ draft: false
 title: Euro-septic
 type: post
 url: /archives/euro-septic/
-categories:
-- Old stories
 ---
 
 Europe is an interesting topic. Politicians in the UK battle with one another to appear more or less "Euro-skeptic" than one another. This week, Tony Blair's final as PM, sees him heading over to a summit to discuss the possibility of a new/ammended treaty/constitution. The facts are a bit blurry.
