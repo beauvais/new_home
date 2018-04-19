@@ -1,0 +1,49 @@
+<section id="post-hero" class="section is-small">
+
+    <!-- Gets latest blog post to display on homepage -->
+    {{ range first 1 (where .Data.Pages "Type" "post") }}
+
+    <div class="columns is-10 is-centered is-vcentered">
+        <div class="column is-6">
+            <div class="content">
+                <h2 class="title">
+                <a href="{{.URL}}" title="{{.Title}}">
+                    {{ .Title }}
+                </a>
+                </h2>
+                <!-- Post metadata -->
+                <div class="level is-size-7">
+                    <span class="level-item">Posted on: {{ .PublishDate.Format "2 January, 2006" }}</span>
+                    {{ if isset .Params "categories" }}
+                    <span class="level-item">In:&nbsp;
+                        {{ range .Params.categories }}
+                        <a href="{{ delimit (slice "/categories/" (urlize .) $.Site.Params.ugly) "" | relURL }}"> {{ . }}&nbsp;</a>
+                        {{ end }}
+                    </span>
+                    {{ end }}
+                </div>
+
+                <div class="content">
+                    <p>{{ slicestr .Summary 0 200 | markdownify }}</p>
+                    <br>
+                    <span class="is-pulled-right">
+                        <a class="button" href="{{.URL}}" title="{{.Title}}">Keep reading&#8230;</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+            <div class="column is-4 is-centered">
+                {{ if isset .Params "image" }}
+                <div class="image">
+                    <a href="{{.URL}}" title="{{.Title}}">
+                        <img class="image" src="/images/{{ .Params.image }}" alt="{{ .Params.image_alt }}">
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+</div>
+</section>
