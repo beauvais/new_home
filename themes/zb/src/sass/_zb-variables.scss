@@ -10,6 +10,10 @@ $primary: $warmgrey;
     color: $white;
 }
 
+* .is-white {
+    color: $white;
+}
+
 * .is-primary {
     background-color: $primary;
 }
@@ -182,6 +186,5 @@ $section-padding-large: $size-1*2 $size-4 !default
 
 .wood-title {
     @extend .title;
-
     color: $white;
 }

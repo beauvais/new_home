@@ -1,15 +1,23 @@
 <!-- partials/wood-section -->
-<section id="greenwood" class="section is-small">
+<section id="greenwood" class="section is-small has-white-text card" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/images/green-woodwork-background.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;">
     
         <div class="columns is-centered is-vcentered">
             <div class="column is-3 has-text-centered   ">
                 <img alt="photo" src="{{ with .Site.GetPage "section" "greenwood" }}{{ .Params.image }}{{ end }}">            
             </div>
             <div class="column is-7">
-                <div class="content">
+                <div class=" has-white-text">
                     <h2 class="title"> {{ with .Site.GetPage "section" "greenwood" }}{{ .Title }}{{ end }}</h2>
                     <h3 class="subtitle">{{ with .Site.GetPage "section" "greenwood" }}{{ .Params.subtitle }}{{ end }}</h3>
-                    <div>
+                    <div class="content">
                         {{ with .Site.GetPage "section" "greenwood" }}{{ .Content}}{{ end }}
                     </div>
                 </div>
