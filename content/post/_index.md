@@ -4,7 +4,7 @@ date = "2018-04-02 00:16:02+00:00"
 draft = "false"
 title = "Posts"
 type = "post"
-subtitle = "a collection of  words I put up on screens"
+subtitle = ""
 image = ""
 +++
 
