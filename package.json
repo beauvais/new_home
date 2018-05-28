@@ -4,7 +4,6 @@
   "description": "site code for zachbeauvais.com",
   "main": "gulpfile.js",
   "dependencies": {
-    "bulma": "^0.5.3",
     "npm": "^5.8.0"
   },
   "devDependencies": {
