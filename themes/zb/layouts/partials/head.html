@@ -11,7 +11,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ .Site.Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
+
+<!-- Hugo pipes stuff
+===-->
+
+    {{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+<!-- === -->
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lora%7CRaleway" rel="stylesheet">
     <!-- OG and other metadata -->
