@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!-- _default/baseof -->
-
-<html lang="en">
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-GB{{ end }}">
     {{ partial "head" . }}
     <body class="has-navbar-fixed-top">
         {{ partial "nav" . }}
